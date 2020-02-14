@@ -23,4 +23,4 @@ Users are given a random color when they start their session. This color works a
 1. Duplicate the 'r' folder and rename it to whatever you'd like. 
 2. Edit libs/gettitle.php by adding a line that connects your new board's folder name to its plain English name. For example, if you created the folder "auto", you'd want to add the line `if ($dir=="auto"){echo "automotive";}` just below the line for the random board.
 3. Edit the root index.php to add a link to the list. The board list starts at line 72. Copy lines 73 and 74, paste them onto the next line down, and change the 'r' in `<?php $folder="r"; ?>` to whatever you named your board's folder.
-
+4. If anyone has posted in the board you copied make sure to empty out in the "bbs.html" file in your new board directory.
