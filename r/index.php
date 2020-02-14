@@ -1,4 +1,4 @@
-<?php include "config.php"; ?>
+<?php include "../config.php"; ?>
 
 <?php
 session_start();
@@ -14,7 +14,13 @@ setcookie("cooks", session_id());
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
-<?php if ($_COOKIE['refresh']!='false') { ?>
+<?php 
+//set some defaults for cookies
+if (!isset($_COOKIE['refresh'])){$_COOKIE['refresh'] = false;} 
+if (!isset($_COOKIE['reply'])){$_COOKIE['reply'] = false;}
+if (!isset($_COOKIE['mute'])){$_COOKIE['mute'] = false;}
+
+if ($_COOKIE['refresh']!='false') { ?>
 <script type="text/javascript">// <![CDATA[
 $(document).ready(function() {
 $.ajaxSetup({ cache: false }); // This part addresses an IE bug.  without it, IE will only load the first number and will never refresh
@@ -232,12 +238,7 @@ else
 					<th><input type="checkbox" id="autocheck" <?php if ($_COOKIE['refresh']!='false'){echo "checked";}?> /></th>
 					
 				</tr>
-				<!--
-				<tr>
-					<td><input type="checkbox" checked/></td>
-					<td>Dark</td>
-				</tr>
-				-->
+				
 			</table>
 		</div>
 		

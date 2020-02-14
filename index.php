@@ -71,7 +71,7 @@ function show(id){
 
 <?/* boardlink block start */?>
 <?php $folder="r"; ?> 
-<img src="folder.png" alt="*" style="vertical-align:text-bottom;"> <a href="/<?php echo $folder; ?>/"><?php $dir = $folder; include './libs/gettitle.php'; ?></a> <img src="embed.png" onclick='show("<?php echo $folder; ?>")' alt="*" style="vertical-align:text-bottom;"> <input type="text" id="<?php echo $folder; ?>" style="display: none;" value='<iframe src="https://hexchan.com/<?php echo $folder; ?>/" height="500" width="640" frameBorder="0">Browser not compatible.</iframe>'>
+<img src="folder.png" alt="*" style="vertical-align:text-bottom;"> <a href="<?php echo $folder; ?>"><?php $dir = $folder; include './libs/gettitle.php'; ?></a> <img src="embed.png" onclick='show("<?php echo $folder; ?>")' alt="*" style="vertical-align:text-bottom;"> <input type="text" id="<?php echo $folder; ?>" style="display: none;" value='<iframe src="<?php echo $URL."/".$folder; ?>/" height="500" width="640" frameBorder="0">Browser not compatible.</iframe>'>
 
 
 <br>
