@@ -2,7 +2,7 @@
 
 Hexchan is a simple text forum that I wrote in PHP back in 2016 to learn a little bit about sessions and cookies. 
 
-Users are given a random color when they start their session. This color works as their username so that others can reply directly too eachother as well. Other features include notification sounds, notification settings, auto-refreshing, automatic board archiving, character limits, and Recaptcha intergration. 
+Users are given a random color when they start their session. This color works as their username so that others can reply directly to each other as well. Other features include notification sounds, notification settings, auto-refreshing, automatic board archiving, character limits, and Recaptcha intergration. 
 
 ### Pretty Pictures
 ![hexchan1](https://user-images.githubusercontent.com/19812682/74511935-be3a2d00-4ecc-11ea-8ecf-588f563e6cae.PNG) 
